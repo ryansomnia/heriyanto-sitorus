@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/heriyanto-sitorus/static/css/main.6f146dd0.css",
+    "main.js": "/heriyanto-sitorus/static/js/main.389354a7.js",
+    "index.html": "/heriyanto-sitorus/index.html",
+    "main.6f146dd0.css.map": "/heriyanto-sitorus/static/css/main.6f146dd0.css.map",
+    "main.389354a7.js.map": "/heriyanto-sitorus/static/js/main.389354a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f146dd0.css",
+    "static/js/main.389354a7.js"
+  ]
+}
