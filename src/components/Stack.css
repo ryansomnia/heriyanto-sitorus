@@ -1,0 +1,80 @@
+.skills-section {
+    text-align: center;
+    padding: 3rem 0;
+    background-color: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .skills-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #508C9B;
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 icons per row */
+    gap: 1.5rem; /* Adjust the gap between the icons */
+    justify-items: center; /* Center icons horizontally */
+}
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .icon-container {
+    width: 120px; /* Slightly smaller size */
+    height: 120px;
+    background-color: #508C9B;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.75rem; /* Reduced margin for tighter layout */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-icon {
+    color: white;
+    font-size: 4rem; /* Slightly smaller icon */
+  }
+  
+  .skill-item p {
+    font-size: 1.1rem;
+    margin: 0.3rem 0; /* Reduced margin */
+    font-weight: bold;
+    color: #201E43;
+
+  }
+  
+  .skill-level {
+    font-size: 0.9rem;
+    color: #201E43;
+  }
+  
+  /* Responsive Styles */
+@media (max-width: 1024px) {
+    .skills-container {
+      grid-template-columns: repeat(3, 1fr); /* 3 icons per row for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skills-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 icons per row for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skills-container {
+      grid-template-columns: repeat(1, 1fr); /* 1 icon per row on very small screens */
+    }
+  }
+  /* Ensure remaining icons in the last row are centered */
+.skills-container::after {
+    content: '';
+    flex: auto;
+  }

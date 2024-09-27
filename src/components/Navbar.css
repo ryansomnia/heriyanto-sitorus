@@ -1,0 +1,82 @@
+/* General Navbar Styles */
+.navbar {
+  background: #EEEEEE;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.logo a {
+  color: #134B70;
+  font-size: 1.6rem; /* Ukuran font sedikit lebih kecil untuk mobile */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  /* background-color: #508C9B; */
+  gap: 1.5rem; /* Gap lebih kecil untuk mobile */
+  margin-right: 2rem; /* Spasi lebih untuk estetika */
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li a {
+  color: #508C9B;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: #18b6dd;
+  font-weight: bolder;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+ .navbar{
+  padding: 0vh;
+
+ }
+  .nav-container {
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem; /* Kurangi gap antar links pada mobile */
+    padding: 0;
+
+  }
+
+  .nav-links li a {
+    font-size: 0.6rem; /* Ukuran font lebih kecil pada mobile */
+    /* margin: 0; */
+  }
+  
+  .logo a {
+    font-size: 0.6rem; /* Ukuran logo lebih kecil pada mobile */
+    margin-right: 30px;
+  }
+}

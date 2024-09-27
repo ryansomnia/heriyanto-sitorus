@@ -1,0 +1,86 @@
+/* General Footer Styling */
+.contact-footer {
+    padding: 3rem 0;
+    background: linear-gradient(135deg, #201E43, #134B70, #508C9B);
+    color: #fff;
+    text-align: center;
+    position: relative;
+  }
+  
+  .footer-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #EEEEEE;
+  }
+  
+  .footer-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #EEEEEE;
+  }
+  
+  .contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .contact-icon:hover {
+    color: #EEEEEE;
+
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s;
+  }
+  
+  .contact-icon:hover .icon {
+    transform: scale(1.1);
+  }
+  
+  .footer-bottom {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #EEEEEE;
+    border-top: 1px solid #3c3f47;
+    padding-top: 1rem;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contact-icons {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .contact-icon {
+      font-size: 1rem;
+    }
+  
+    .icon {
+      font-size: 2rem;
+    }
+  
+    .footer-title {
+      font-size: 2rem;
+    }
+  }
+  
